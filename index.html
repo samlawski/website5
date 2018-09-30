@@ -50,13 +50,20 @@
         font-weight: 600;
       }
       h2 {
-        font-size: 12px;
         font-weight: 400;
+      }
+      p, h2 {
+        margin-top: 3px;
+        font-size: 12px;
       }
       a {
         text-decoration: none;
-        color: inherit;
+        color: #A5978B;
+        -webkit-transition: color .4s;
+             -o-transition: color .4s;
+                transition: color .4s;
       }
+      a:hover { color: #E0C8A6; }
       /* HEADER */
       .header__container {
         height: 100vh;
@@ -129,15 +136,8 @@
       nav {
         text-align: center;
         padding: 10px;
-        color: #686059;
-      }
-      nav>a {
         text-transform: uppercase;
-        -webkit-transition: color .4s;
-             -o-transition: color .4s;
-                transition: color .4s;
       }
-      nav>a:hover { color: #A5978B; }
       /* MAIN */
       main {
         padding: 5px 10px 10px;
@@ -146,6 +146,7 @@
       main>a {
         margin-bottom: 10px;
         padding: 10px;
+        color: inherit;
 
         display: -webkit-box;
         display: -ms-flexbox;
@@ -164,11 +165,11 @@
              -o-transition: background-color .4s;
                 transition: background-color .4s;
       }
-      main>a:hover { background-color: #7F756E; }
-      main h3 {
-        font-weight: 600;
-        margin-bottom: 3px;
+      main>a:hover {
+        background-color: #7F756E;
+        color: inherit;
       }
+      main h3 { font-weight: 600; }
       .main__logo {
         height: 32px;
         width: 32px;
@@ -215,6 +216,9 @@
         <section>
           <h1>Samuel Boguslawski</h1>
           <h2>Developer of web applications<br /> and conversational interfaces.</h2>
+          <p>
+            <a href="mailto:mail@samuelboguslawski.com">mail [at] samuelboguslawski.com</a>
+          </p>
         </section>
       </header>
 
