@@ -53,9 +53,6 @@
         font-size: 12px;
         font-weight: 400;
       }
-      h3 {
-        margin-top: 3px;
-      }
       a, a:visited, a:active {
         text-decoration: none;
         color: inherit;
@@ -122,7 +119,7 @@
       }
       /* MAIN */
       main {
-        padding: 10px;
+        padding: 5px 10px 10px;
         border-top: 1px solid #1C1A18;
       }
       main>a {
@@ -147,7 +144,10 @@
                 transition: background-color .4s;
       }
       main>a:hover { background-color: #7F756E; }
-      main p { font-weight: 600; }
+      main h3 {
+        font-weight: 600;
+        margin-bottom: 3px;
+      }
       .main__logo {
         height: 32px;
         width: 32px;
@@ -160,15 +160,17 @@
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
           max-width: 700px;
           margin-left: auto;
           margin-right: auto;
         }
         main>a {
           -webkit-box-flex: 1;
-                  -ms-flex: 1 0;
-                      flex: 1 0;
-          margin: 0 5px;
+                  -ms-flex: 1 1 30%;
+                      flex: 1 1 30%;
+          margin: 5px;
         }
       }
 
@@ -195,25 +197,46 @@
     </header>
 
     <main>
-      <a href="https://careerfoundry.com" target="_blank" rel="noopener">
+      <a href="https://careerfoundry.com/en/home" target="_blank" rel="noopener">
         <img class="main__logo" src="icons/cf.png" alt="CareerFoundry Logo" />
         <div>
-          <p>Currently</p>
-          <h3>Lead Engineer at CareerFoundry</h3>
+          <h3>lead engineer & frontend development</h3>
+          <p>CareerFoundry GmbH</p>
         </div>
       </a>
       <a href="https://assistant.google.com/services/a/uid/0000004ec0d8e001?hl=en" target="_blank" rel="noopener">
         <img class="main__logo" src="icons/mt.png" alt="CareerFoundry Logo" />
         <div>
-          <p>Recent Project</p>
-          <h3>Music Tools (Voice App for Google Assistant)</h3>
+          <h3>voice interface design & development</h3>
+          <p>Music Tools</p>
         </div>
       </a>
       <a href="http://mavuno.de" target="_blank" rel="noopener">
         <img class="main__logo" src="icons/ma.png" alt="CareerFoundry Logo" />
         <div>
-          <p>First Project</p>
-          <h3>Mavuno Berlin (Website)</h3>
+          <h3>web design & development</h3>
+          <p>Mavuno Berlin K.d.ö.R.</p>
+        </div>
+      </a>
+      <a href="http://advoadvice.de" target="_blank" rel="noopener">
+        <img class="main__logo" src="icons/aa.png" alt="AdvoAdvice Logo" />
+        <div>
+          <h3>web design & development</h3>
+          <p>AdvoAdvice mbB</p>
+        </div>
+      </a>
+      <a href="http://fire-service-consulting.de" target="_blank" rel="noopener">
+        <img class="main__logo" src="icons/fs.png" alt="FiRe Service & Consulting Logo" />
+        <div>
+          <h3>web design & development</h3>
+          <p>FiRe Service & Consulting</p>
+        </div>
+      </a>
+      <a href="http://bioprojet.de" target="_blank" rel="noopener">
+        <img class="main__logo" src="icons/bp.png" alt="Bioprojet Logo" />
+        <div>
+          <h3>web design & development</h3>
+          <p>Bioprojet GmbH</p>
         </div>
       </a>
     </main>
